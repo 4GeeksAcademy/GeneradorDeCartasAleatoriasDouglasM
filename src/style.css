@@ -1,1 +1,51 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.cartaStyle {
+  width: 450px;
+  height: 720px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.valorStyle {
+  font-size: 200px;
+  font-weight: bold;
+}
+
+.paloStyle {
+  font-size: 130px;
+  margin-top: 10px;
+}
+
+body {
+  background-color: green;
+}
+
+.divPaloTop {
+  margin-left: 10px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.divValor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 485px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.divPaloBottom {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transform: rotateX(180deg);
+  width: 430px;
+  height: 100px;
+  margin-right: 10px;
+}
