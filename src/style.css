@@ -56,22 +56,22 @@ body {
   border-radius: 10px;
 }
 
-.picas::before {
+.spade::before {
   content: "♠";
   color: black;
 }
 
-.trebol::before {
+.club::before {
   content: "♣";
   color: black;
 }
 
-.corazon::before {
+.heart::before {
   content: "♥";
   color: red;
 }
 
-.diamante::before {
+.diamond::before {
   content: "♦";
   color: red;
 }
