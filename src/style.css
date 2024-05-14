@@ -1,33 +1,36 @@
-.cartaStyle {
+.card {
   width: 450px;
-  height: 720px;
+  height: 750px;
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 65%;
   transform: translate(-50%, -50%);
 }
 
-.valorStyle {
-  font-size: 200px;
+.valor {
+  font-size: 80px;
   font-weight: bold;
+  margin: 2px;
 }
 
-.paloStyle {
-  font-size: 130px;
-  margin-top: 10px;
+.palo {
+  font-size: 60px;
+  margin: 2px;
 }
 
 body {
   background-color: green;
 }
 
-.divPaloTop {
-  margin-left: 10px;
-  width: 200px;
-  height: 100px;
+.divPalo1 {
+  margin: 2px;
   display: flex;
   align-items: center;
 }
@@ -35,17 +38,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 485px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
-.divPaloBottom {
+.divPalo2 {
   display: flex;
   justify-content: end;
   align-items: center;
   transform: rotateX(180deg);
-  width: 430px;
-  height: 100px;
-  margin-right: 10px;
+  margin: 2px;
+}
+
+.temporizador {
+  width: 20%;
+  height: 13%;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.picas::before {
+  content: "♠";
+  color: black;
+}
+
+.trebol::before {
+  content: "♣";
+  color: black;
+}
+
+.corazon::before {
+  content: "♥";
+  color: red;
+}
+
+.diamante::before {
+  content: "♦";
+  color: red;
+}
+.sliderDiv {
+  margin-top: 2%;
+}
+.sliderLabel {
+  display: block;
+  margin-bottom: 0.5%;
+}
+.slider {
+  width: 100%;
+}
+
+/* div {
+  border: solid greenyellow;
+} */
+
+.divFunciones {
+  padding: 10px;
 }

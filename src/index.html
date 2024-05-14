@@ -11,11 +11,48 @@
     />
   </head>
   <body>
-    <div>
-      <div id="carta" class="cartaStyle">
-        <div class="paloStyle divPaloTop" id="palo1">&#9824;</div>
-        <div class="valorStyle divValor" id="valor">A</div>
-        <div class="paloStyle divPaloBottom" id="palo2">&#9824;</div>
+    <div id="carta" class="card">
+      <div class="palo divPalo1" id="palo1"></div>
+      <div class="valor divValor" id="valor"></div>
+      <div class="palo divPalo2" id="palo2"></div>
+    </div>
+    <div class="divFunciones">
+      <div style="margin: 30px;">
+        <h1 style="color: red; display: inline;">♦ ♥</h1>
+        <h1 style="color: greenyellow; display: inline;">
+          GENERADOR DE CARTAS ALEATORIAS
+        </h1>
+        <h1 style="display: inline;">♠ ♣</h1>
+        <h2 style="color: greenyellow;">
+          Se Generara De Manera Automatica Una Nueva Carta En 10 Segundos
+        </h2>
+      </div>
+      <div style="margin-left: 180px;">
+        <button
+          id="cambiarCarta"
+          style="margin: 30px; font-size: 30px; border-radius: 10px;"
+        >
+          Generar Una Carta Nueva 
+        </button>
+        <div id="temporizador" class="temporizador" style="margin: 30px;"></div>
+        <div id="sliderDiv" style="margin: 30px;">
+          <h2 style="color: greenyellow;">Cambia El Tamaño De Tu Carta</h2>
+          <label
+            for="sliderAncho"
+            class="sliderLabel"
+            style="color: greenyellow;"
+            >Ancho:</label
+          >
+          <input
+            type="range"
+            id="sliderAncho"
+            min="200"
+            max="600"
+            value="450"
+          />
+          <label for="sliderAlto" class="sliderLabel" style="color: greenyellow;"">Alto:</label>
+          <input type="range" id="sliderAlto" min="257" max="800" value="750" />
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script>
